@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true">
+    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve valid anagram problem&#10;&#10;convert each string to char array&#10;and sort them then compare equality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672324765434</updated>
       <workItem from="1672324766504" duration="1030000" />
-      <workItem from="1672350541472" duration="2428000" />
+      <workItem from="1672350541472" duration="5634000" />
     </task>
     <task id="LOCAL-00001" summary="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true">
       <created>1672352483675</created>
@@ -78,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672352483675</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="_">
+      <created>1672353228420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672353228420</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +105,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true" />
+    <MESSAGE value="_" />
+    <MESSAGE value="Solve valid anagram problem&#10;&#10;convert each string to char array&#10;and sort them then compare equality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve valid anagram problem&#10;&#10;convert each string to char array&#10;and sort them then compare equality" />
   </component>
 </project>
