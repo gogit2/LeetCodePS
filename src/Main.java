@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,10 +17,12 @@ public class Main {
         System.out.println(solution.isAnagram(name, noun));
         */
 
-        // https://leetcode.com/problems/two-sum/
+        /* // https://leetcode.com/problems/two-sum/
         int[]nums = {3,2,3};
         System.out.println(Arrays.toString(solution.twoSum(nums, 6)));
+        */
 
-
+        String[] strs = {"a"};
+        System.out.println(solution.groupAnagrams(strs));
     }
 }
