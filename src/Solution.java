@@ -2,8 +2,7 @@ import java.util.*;
 
 public class Solution {
 
-    /*
-    // https://leetcode.com/problems/contains-duplicate/
+    /* // https://leetcode.com/problems/contains-duplicate/
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> items = new HashSet<>();
 
@@ -16,10 +15,9 @@ public class Solution {
         }
 
         return false;
-    }
-    */
+    } */
 
-    // https://leetcode.com/problems/valid-anagram/
+    /* // https://leetcode.com/problems/valid-anagram/
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length())
             return false;
@@ -33,5 +31,41 @@ public class Solution {
         String sortedT = new String(tChars);
 
         return sortedS.equals(sortedT);
+    } */
+
+    // https://leetcode.com/problems/two-sum/
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i=0, complement=0; i<nums.length; i++){
+            complement = target - nums[i];
+            if (map.containsKey(complement) && map.get(complement) != i) {
+                return new int[] {map.get(complement), i};
+            }
+            map.put(nums[i], i);
+        }
+        return null;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
