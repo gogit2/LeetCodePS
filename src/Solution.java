@@ -1,4 +1,8 @@
 import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.util.Map.Entry.comparingByValue;
+import static java.util.stream.Collectors.toList;
 
 public class Solution {
 
@@ -46,6 +50,7 @@ public class Solution {
         return null;
     } */
 
+    /* // https://leetcode.com/problems/group-anagrams/
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> stringListOfList = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
@@ -68,9 +73,29 @@ public class Solution {
         }
 
         return stringListOfList;
+    } */
+
+    // https://leetcode.com/problems/top-k-frequent-elements/
+    public int[] topKFrequent(int[] nums, int k) {
+        int[] result = new int[k];
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i=0; i<nums.length; i++){
+            if (map.containsKey(nums[i]))
+                map.put(nums[i], map.get(nums[i])+1);
+            else
+                map.put(nums[i], 1);
+        }
+
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+        list.sort(Map.Entry.comparingByValue());
+
+        for (int i=0; i<k ; i++){
+            result[i] = list.get(list.size()-(i+1)).getKey();
+        }
+
+        return result;
     }
-
-
 
 
 

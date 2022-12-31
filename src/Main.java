@@ -22,7 +22,15 @@ public class Main {
         System.out.println(Arrays.toString(solution.twoSum(nums, 6)));
         */
 
+        /* // https://leetcode.com/problems/group-anagrams/
         String[] strs = {"a"};
         System.out.println(solution.groupAnagrams(strs));
+        */
+
+        // https://leetcode.com/problems/top-k-frequent-elements/
+        int[]nums = {1,1,1,2,2,3};
+        int k = 2;
+        solution.topKFrequent(nums, k);
+
     }
 }
