@@ -27,10 +27,15 @@ public class Main {
         System.out.println(solution.groupAnagrams(strs));
         */
 
-        // https://leetcode.com/problems/top-k-frequent-elements/
+        /* // https://leetcode.com/problems/top-k-frequent-elements/
         int[]nums = {1,1,1,2,2,3};
         int k = 2;
         solution.topKFrequent(nums, k);
+        */
+
+        // https://leetcode.com/problems/product-of-array-except-self/
+        int[]nums = {-1,1,0,-3,3};
+        solution.productExceptSelf(nums);
 
     }
 }

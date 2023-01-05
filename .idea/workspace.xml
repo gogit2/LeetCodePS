@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve Group Anagrams problem&#10;&#10;approach: store key sorted string with his&#10;list of Anagrams in hashmap">
+    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve top-k-frequent-elements problem&#10;&#10;approach: store value of counts of key in&#10;hashmap then sort the list to get most (k) frequencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
@@ -72,7 +72,9 @@
       <workItem from="1672324766504" duration="1030000" />
       <workItem from="1672350541472" duration="5634000" />
       <workItem from="1672391392732" duration="12217000" />
-      <workItem from="1672483902300" duration="4146000" />
+      <workItem from="1672483902300" duration="4898000" />
+      <workItem from="1672863221115" duration="2325000" />
+      <workItem from="1672916666003" duration="7814000" />
     </task>
     <task id="LOCAL-00001" summary="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true">
       <created>1672352483675</created>
@@ -102,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672415696172</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Solve top-k-frequent-elements problem&#10;&#10;approach: store value of counts of key in&#10;hashmap then sort the list to get most (k) frequencies">
+      <created>1672488356682</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672488356682</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +134,7 @@
     <MESSAGE value="Solve valid anagram problem&#10;&#10;convert each string to char array&#10;and sort them then compare equality" />
     <MESSAGE value="Solve two-sum problem&#10;&#10;Solved by two ways&#10;1- brute force through making two loops&#10;2- by hash map by storing index of each element&#10;and check complement occurrence" />
     <MESSAGE value="Solve Group Anagrams problem&#10;&#10;approach: store key sorted string with his&#10;list of Anagrams in hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Group Anagrams problem&#10;&#10;approach: store key sorted string with his&#10;list of Anagrams in hashmap" />
+    <MESSAGE value="Solve top-k-frequent-elements problem&#10;&#10;approach: store value of counts of key in&#10;hashmap then sort the list to get most (k) frequencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve top-k-frequent-elements problem&#10;&#10;approach: store value of counts of key in&#10;hashmap then sort the list to get most (k) frequencies" />
   </component>
 </project>

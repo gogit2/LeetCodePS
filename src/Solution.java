@@ -75,7 +75,7 @@ public class Solution {
         return stringListOfList;
     } */
 
-    // https://leetcode.com/problems/top-k-frequent-elements/
+    /* // https://leetcode.com/problems/top-k-frequent-elements/
     public int[] topKFrequent(int[] nums, int k) {
         int[] result = new int[k];
         Map<Integer, Integer> map = new HashMap<>();
@@ -96,6 +96,39 @@ public class Solution {
 
         return result;
     }
+    */
+
+    // https://leetcode.com/problems/product-of-array-except-self/
+    public int[] productExceptSelf(int[] nums) {
+        int [] result = new int[nums.length];
+        int productPrefix = 1;
+        int productPostfix = 1;
+
+        for (int i=0; i<nums.length; i++){
+               result[i] = productPrefix;
+               productPrefix *= nums[i];
+        }
+        for (int j=nums.length-1; j>=0; j--){
+           result[j] *= productPostfix;
+           productPostfix *= nums[j];
+        }
+
+        return result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
