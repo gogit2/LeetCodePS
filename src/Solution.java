@@ -98,7 +98,7 @@ public class Solution {
     }
     */
 
-    // https://leetcode.com/problems/product-of-array-except-self/
+    /* // https://leetcode.com/problems/product-of-array-except-self/
     public int[] productExceptSelf(int[] nums) {
         int [] result = new int[nums.length];
         int productPrefix = 1;
@@ -115,8 +115,56 @@ public class Solution {
 
         return result;
     }
+    */
 
+    // https://leetcode.com/problems/valid-sudoku/description/
+    public boolean isValidSudoku(char[][] board) {
+        HashSet<Character> chars = new HashSet<>();
+        HashSet<Character> rowChars = new HashSet<>();
+        HashSet<Character> columnsChars = new HashSet<>();
+        int countI = 0;
 
+        for (int i=0; i< board.length; i++){
+            for (int j=0; j< board[i].length; j++){
+                if (rowChars.contains(board[i][j]))
+                    return false;
+                if (columnsChars.contains(board[j][i]))
+                    return false;
+
+                if (board[i][j] != '.')
+                    rowChars.add(board[i][j]);
+                if (board[j][i] != '.')
+                    columnsChars.add(board[j][i]);
+
+                if (i <= 2){
+                    countI = 0;
+                } else if (i <= 5){
+                    countI = 3;
+                } else if (i <= 8){
+                    countI = 6;
+                }
+
+                if(i%3 == 0)  {
+                    for (int k = 0; k < 3; k++) {
+                        if (chars.contains(board[countI][j])) {
+                            return false;
+                        }
+                        if (board[countI][j] != '.') {
+                            chars.add(board[countI][j]);
+                        }
+                        countI++;
+                    }
+
+                    if (j == 2 || j == 5 || j == 8) {
+                        chars.clear();
+                    }
+                }
+            }
+            rowChars.clear();
+            columnsChars.clear();
+        }
+        return true;
+    }
 
 
 

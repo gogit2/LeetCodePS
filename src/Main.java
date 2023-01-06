@@ -33,9 +33,22 @@ public class Main {
         solution.topKFrequent(nums, k);
         */
 
-        // https://leetcode.com/problems/product-of-array-except-self/
+        /* // https://leetcode.com/problems/product-of-array-except-self/
         int[]nums = {-1,1,0,-3,3};
         solution.productExceptSelf(nums);
+        */
+
+        // https://leetcode.com/problems/valid-sudoku/description/
+        char[][] board = {{'8','.','3','.','.','.','.','.','.'}
+                            ,{'6','.','.','.','.','.','.','2','.'}
+                            ,{'.','1','.','.','.','.','.','7','.'}
+                            ,{'1','.','.','.','.','.','.','.','3'}
+                            ,{'.','.','.','.','.','2','.','.','.'}
+                            ,{'.','.','.','.','.','3','.','.','.'}
+                            ,{'.','.','.','.','6','.','.','.','.'}
+                            ,{'9','.','.','.','.','.','6','.','.'}
+                            ,{'.','.','1','.','.','4','.','.','.'}};
+        System.out.println(solution.isValidSudoku(board));
 
     }
 }
