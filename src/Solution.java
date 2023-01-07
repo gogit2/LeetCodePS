@@ -117,7 +117,7 @@ public class Solution {
     }
     */
 
-    // https://leetcode.com/problems/valid-sudoku/description/
+    /* // https://leetcode.com/problems/valid-sudoku/description/
     public boolean isValidSudoku(char[][] board) {
         HashSet<Character> chars = new HashSet<>();
         HashSet<Character> rowChars = new HashSet<>();
@@ -165,8 +165,27 @@ public class Solution {
         }
         return true;
     }
+    */
 
+    // https://leetcode.com/problems/longest-consecutive-sequence/
+    public int longestConsecutive(int[] nums) {
+        int longest = nums.length>0 ? 1 : 0 ;
+        int maxConsecutive  = 1;
+        Arrays.sort(nums);
+        for (int i=1; i<nums.length; i++) {
+            if (nums[i] == nums[i-1]+1)
+                maxConsecutive += 1;
+            else if (nums[i] == nums[i-1])
+                continue;
+            else
+                maxConsecutive = 1;
 
+            if (maxConsecutive > longest) {
+                longest = maxConsecutive;
+            }
+        }
+        return longest;
+    }
 
 
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve Product of Array Except Self problem&#10;&#10;approach: calculate each index product by making &#10;two pointers one to get the product of prefix&#10;and then store his value temporary in the res[]&#10;and the other of postfix which get the product&#10;of array from other side then store it in the res[]&#10;by multiplying the prefix in stored res[]">
+    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve Valid Sudoku problem&#10;&#10;approach: store row, columns and square chars in sets &#10;and checks on duplicates if found return false else return true&#10;looping through row and columns is pretty easy&#10;tricky part on looping through squares , I followed&#10;approach of looping through columns and changing row &#10;so each j count reach to 9 i checked 3 squares&#10;then repeat the step to other 6 squares by looping&#10;through i twice (loop when i mod 3 equal 0)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
@@ -76,7 +76,9 @@
       <workItem from="1672863221115" duration="2325000" />
       <workItem from="1672916666003" duration="31138000" />
       <workItem from="1672997807581" duration="326000" />
-      <workItem from="1673002643007" duration="1806000" />
+      <workItem from="1673002643007" duration="2390000" />
+      <workItem from="1673100457881" duration="2043000" />
+      <workItem from="1673115710575" duration="3393000" />
     </task>
     <task id="LOCAL-00001" summary="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true">
       <created>1672352483675</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672927887199</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Solve Valid Sudoku problem&#10;&#10;approach: store row, columns and square chars in sets &#10;and checks on duplicates if found return false else return true&#10;looping through row and columns is pretty easy&#10;tricky part on looping through squares , I followed&#10;approach of looping through columns and changing row &#10;so each j count reach to 9 i checked 3 squares&#10;then repeat the step to other 6 squares by looping&#10;through i twice (loop when i mod 3 equal 0)">
+      <created>1673005013843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673005013843</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +154,7 @@
     <MESSAGE value="Solve Group Anagrams problem&#10;&#10;approach: store key sorted string with his&#10;list of Anagrams in hashmap" />
     <MESSAGE value="Solve top-k-frequent-elements problem&#10;&#10;approach: store value of counts of key in&#10;hashmap then sort the list to get most (k) frequencies" />
     <MESSAGE value="Solve Product of Array Except Self problem&#10;&#10;approach: calculate each index product by making &#10;two pointers one to get the product of prefix&#10;and then store his value temporary in the res[]&#10;and the other of postfix which get the product&#10;of array from other side then store it in the res[]&#10;by multiplying the prefix in stored res[]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Product of Array Except Self problem&#10;&#10;approach: calculate each index product by making &#10;two pointers one to get the product of prefix&#10;and then store his value temporary in the res[]&#10;and the other of postfix which get the product&#10;of array from other side then store it in the res[]&#10;by multiplying the prefix in stored res[]" />
+    <MESSAGE value="Solve Valid Sudoku problem&#10;&#10;approach: store row, columns and square chars in sets &#10;and checks on duplicates if found return false else return true&#10;looping through row and columns is pretty easy&#10;tricky part on looping through squares , I followed&#10;approach of looping through columns and changing row &#10;so each j count reach to 9 i checked 3 squares&#10;then repeat the step to other 6 squares by looping&#10;through i twice (loop when i mod 3 equal 0)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Valid Sudoku problem&#10;&#10;approach: store row, columns and square chars in sets &#10;and checks on duplicates if found return false else return true&#10;looping through row and columns is pretty easy&#10;tricky part on looping through squares , I followed&#10;approach of looping through columns and changing row &#10;so each j count reach to 9 i checked 3 squares&#10;then repeat the step to other 6 squares by looping&#10;through i twice (loop when i mod 3 equal 0)" />
   </component>
 </project>

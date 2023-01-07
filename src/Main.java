@@ -38,7 +38,7 @@ public class Main {
         solution.productExceptSelf(nums);
         */
 
-        // https://leetcode.com/problems/valid-sudoku/description/
+        /* // https://leetcode.com/problems/valid-sudoku/description/
         char[][] board = {{'8','.','3','.','.','.','.','.','.'}
                             ,{'6','.','.','.','.','.','.','2','.'}
                             ,{'.','1','.','.','.','.','.','7','.'}
@@ -49,6 +49,11 @@ public class Main {
                             ,{'9','.','.','.','.','.','6','.','.'}
                             ,{'.','.','1','.','.','4','.','.','.'}};
         System.out.println(solution.isValidSudoku(board));
+        */
+
+        // https://leetcode.com/problems/longest-consecutive-sequence/
+        int[]nums = {1,2,0,1,3,3,2,4};
+        System.out.println("\nThe length of the longest consecutive elements sequence is : " + solution.longestConsecutive(nums));
 
     }
 }
