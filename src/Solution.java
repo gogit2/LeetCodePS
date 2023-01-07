@@ -167,7 +167,7 @@ public class Solution {
     }
     */
 
-    // https://leetcode.com/problems/longest-consecutive-sequence/
+    /* // https://leetcode.com/problems/longest-consecutive-sequence/
     public int longestConsecutive(int[] nums) {
         int longest = nums.length>0 ? 1 : 0 ;
         int maxConsecutive  = 1;
@@ -186,7 +186,43 @@ public class Solution {
         }
         return longest;
     }
+    */
 
+    // https://leetcode.com/problems/valid-palindrome/
+    public boolean isPalindrome(String s) {
+//        String revercedString = "";
+//        s = s.toLowerCase();
+//        s = s.replaceAll("[^a-z0-9]", "");
+//        char[] sChars= s.toCharArray();
+//        for (int i=sChars.length-1; i>=0; i--){
+//            revercedString = revercedString.concat(String.valueOf(sChars[i]));
+//        }
+//        return s.equals(revercedString);
+
+        // solving it with more efficient way -> by using two pointers
+        int left = 0;
+        int right = s.length()-1;
+        s = s.toLowerCase();
+        while (left < right){
+            while (!isNumeric(s.charAt(left)) ){
+                if (left == s.length()-1) return true;
+                else left++;
+            }
+            while (!isNumeric(s.charAt(right))){
+                if (right == 0) return true;
+                else right--;
+            }
+            if(s.charAt(left) != s.charAt(right)){
+                return false;
+            }
+            left ++;
+            right --;
+        }
+        return true;
+    }
+    private boolean isNumeric(char c){
+        return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'z');
+    }
 
 
 

@@ -51,9 +51,14 @@ public class Main {
         System.out.println(solution.isValidSudoku(board));
         */
 
-        // https://leetcode.com/problems/longest-consecutive-sequence/
+        /* // https://leetcode.com/problems/longest-consecutive-sequence/
         int[]nums = {1,2,0,1,3,3,2,4};
         System.out.println("\nThe length of the longest consecutive elements sequence is : " + solution.longestConsecutive(nums));
+        */
+
+//        String s = "A man, a plan, a canal: Panama";
+        String s = "race a car";
+        System.out.println(solution.isPalindrome(s));
 
     }
 }
