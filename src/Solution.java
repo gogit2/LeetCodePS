@@ -188,7 +188,7 @@ public class Solution {
     }
     */
 
-    // https://leetcode.com/problems/valid-palindrome/
+    /* // https://leetcode.com/problems/valid-palindrome/
     public boolean isPalindrome(String s) {
 //        String revercedString = "";
 //        s = s.toLowerCase();
@@ -223,8 +223,41 @@ public class Solution {
     private boolean isNumeric(char c){
         return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'z');
     }
+    */
 
+    // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+    public int[] twoSum(int[] numbers, int target) {
+//        int[] result = new int[2];
+//        HashMap<Integer, Integer> map = new HashMap<>();
+//        int reqValue = 0;
+//
+//        for (int j=0; j<numbers.length; j++){
+//            reqValue = target - numbers[j];
+//            if (map.containsKey(reqValue)) {
+//                result[0] = j +1;
+//                result[1] = map.get(reqValue);
+//                return result;
+//            }
+//        }
+//        return result;
 
+        // solving it with more efficient way -> by using two pointers
+        int left = 0;
+        int right = numbers.length-1;
+
+        for (int i=0; i<numbers.length; i++) {
+            if (numbers[left] + numbers[right] == target){
+                return new int[] {left+1, right+1};
+            }
+            else if (numbers[left] + numbers[right] > target) {
+                right--;
+            }
+            else if (numbers[left] + numbers[right] < target) {
+                left++;
+            }
+        }
+        return new int[]{0,0};
+    }
 
 
 

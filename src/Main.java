@@ -56,9 +56,15 @@ public class Main {
         System.out.println("\nThe length of the longest consecutive elements sequence is : " + solution.longestConsecutive(nums));
         */
 
-//        String s = "A man, a plan, a canal: Panama";
+        /* // https://leetcode.com/problems/valid-palindrome/description/
         String s = "race a car";
         System.out.println(solution.isPalindrome(s));
+        */
+
+        // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+        int[]nums = {};
+        int[] result = solution.twoSum(nums, -1);
+        System.out.println(result[0] + " " + result[1]);
 
     }
 }
