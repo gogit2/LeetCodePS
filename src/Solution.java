@@ -225,7 +225,7 @@ public class Solution {
     }
     */
 
-    // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+    /* // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
     public int[] twoSum(int[] numbers, int target) {
 //        int[] result = new int[2];
 //        HashMap<Integer, Integer> map = new HashMap<>();
@@ -258,10 +258,44 @@ public class Solution {
         }
         return new int[]{0,0};
     }
+     */
 
+    // https://leetcode.com/problems/3sum/
+    public List<List<Integer>> threeSums(int[] nums) {
+        ArrayList<List<Integer>> listOfList = new ArrayList();
+        HashSet<List<Integer>> set = new HashSet<>();
+        Arrays.sort(nums);
 
+        int pointerLeft = 0;
+        int pointerMid = 1;
+        int pointerRight = nums.length-1;
+        int sum = 0;
 
+        while (pointerLeft != pointerRight){
+            while (pointerMid != pointerRight) {
+                sum = nums[pointerLeft] + nums[pointerMid] + nums[pointerRight];
+                if (sum == 0) {
+                    ArrayList the_3_sum = new ArrayList();
+                    the_3_sum.add(nums[pointerLeft]);
+                    the_3_sum.add(nums[pointerMid]);
+                    the_3_sum.add(nums[pointerRight]);
+                    set.add(the_3_sum);
+                    pointerMid++;
+                } else if (sum > 0){
+                    pointerRight--;
+                } else if (sum < 0){
+                    pointerMid++;
+                }
+            }
+            pointerLeft ++;
+            pointerMid = pointerLeft+1;
+            pointerRight = nums.length-1;
 
+        }
+
+        listOfList.addAll(set);
+        return listOfList;
+    }
 
 
 

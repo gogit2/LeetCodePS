@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve valid-palindrome problem&#10;&#10;approach: of efficient way to make two pointers&#10;and loop on numeric chars and digits only till they&#10;met, then handle side cases if we faced a non-numeric&#10;value then if we looped by the pointer and reached to &#10;the end of string, that's mean this should be a valid&#10;cuz it will be like an array with one char, which be&#10;valid either a numeric or else.">
+    <list default="true" id="6ef26af4-f06a-46f6-a81f-79cadc0acd50" name="Changes" comment="Solve two-sum-ii-input-array-is-sorted problem&#10;&#10;approach: an efficient way to make two pointers&#10;and loop with two pointers if target grater than &#10;sum of two pointers then move left pointer by one&#10;and vice versa till we find the result.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
@@ -39,6 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Projects/spring-boot-voting&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -47,7 +48,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Impl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Impl" />
+      <module name="LeetCodeProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LeetCodeProblems" />
@@ -58,6 +66,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Impl" />
       </list>
     </recent_temporary>
   </component>
@@ -83,6 +92,16 @@
       <workItem from="1673619206361" duration="8467000" />
       <workItem from="1674319161119" duration="1217000" />
       <workItem from="1675428366030" duration="1554000" />
+      <workItem from="1675432013032" duration="563000" />
+      <workItem from="1675432839142" duration="606000" />
+      <workItem from="1675453033733" duration="4181000" />
+      <workItem from="1675941953097" duration="4471000" />
+      <workItem from="1676500439729" duration="1411000" />
+      <workItem from="1678056028334" duration="6365000" />
+      <workItem from="1678103774482" duration="1676000" />
+      <workItem from="1678271769088" duration="4696000" />
+      <workItem from="1678452344822" duration="4511000" />
+      <workItem from="1678576802123" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="Add a repo of solving leet code problems (PS)&#10;&#10;Solve containsDuplicate problem&#10;use set to store key values when &#10;triggering duplicate number over &#10;the true duplicate flag and return true">
       <created>1672352483675</created>
@@ -147,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673126700469</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Solve two-sum-ii-input-array-is-sorted problem&#10;&#10;approach: an efficient way to make two pointers&#10;and loop with two pointers if target grater than &#10;sum of two pointers then move left pointer by one&#10;and vice versa till we find the result.">
+      <created>1675432391578</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675432391578</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,17 +201,7 @@
     <MESSAGE value="Solve Valid Sudoku problem&#10;&#10;approach: store row, columns and square chars in sets &#10;and checks on duplicates if found return false else return true&#10;looping through row and columns is pretty easy&#10;tricky part on looping through squares , I followed&#10;approach of looping through columns and changing row &#10;so each j count reach to 9 i checked 3 squares&#10;then repeat the step to other 6 squares by looping&#10;through i twice (loop when i mod 3 equal 0)" />
     <MESSAGE value="Solve longest-consecutive-sequence problem&#10;&#10;approach: sort the array then find maxConsecutive&#10;and save max to the longest till finding max grater&#10;than longest, then store it." />
     <MESSAGE value="Solve valid-palindrome problem&#10;&#10;approach: of efficient way to make two pointers&#10;and loop on numeric chars and digits only till they&#10;met, then handle side cases if we faced a non-numeric&#10;value then if we looped by the pointer and reached to &#10;the end of string, that's mean this should be a valid&#10;cuz it will be like an array with one char, which be&#10;valid either a numeric or else." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve valid-palindrome problem&#10;&#10;approach: of efficient way to make two pointers&#10;and loop on numeric chars and digits only till they&#10;met, then handle side cases if we faced a non-numeric&#10;value then if we looped by the pointer and reached to &#10;the end of string, that's mean this should be a valid&#10;cuz it will be like an array with one char, which be&#10;valid either a numeric or else." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Solution.java</url>
-          <line>244</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Solve two-sum-ii-input-array-is-sorted problem&#10;&#10;approach: an efficient way to make two pointers&#10;and loop with two pointers if target grater than &#10;sum of two pointers then move left pointer by one&#10;and vice versa till we find the result." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve two-sum-ii-input-array-is-sorted problem&#10;&#10;approach: an efficient way to make two pointers&#10;and loop with two pointers if target grater than &#10;sum of two pointers then move left pointer by one&#10;and vice versa till we find the result." />
   </component>
 </project>
